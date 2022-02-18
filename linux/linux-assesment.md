@@ -677,3 +677,9 @@ if [[ $FILE == $GLOB ]] ;then
 - [ ] the output from the command line.
 - [ ] Nothing, because you cannot redirect from a file (in.txt) to another file (out.txt). You can redirect only from a command to a file.
 - [ ] Nothing, The redirect will create a new empty file, but there will not be any output from the cat command to redirect.
+
+### Q83. What would you type to list all systemd service unit files, whether they are enabled or not?
+- [ ] chkconfig --list-all
+- [ ] systemctl list-services
+- [x] systemctl list-unit-files -at service
+- [ ] systemctl list-unit-files -t service
